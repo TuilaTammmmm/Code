@@ -50,7 +50,7 @@ public:
 int main() {
     SLinkedList list;
     int n;
-    cout << "Nhap so luong phan tu n: "<<;
+    cout << "Nhap so luong phan tu n: ";
     cin >> n;
 
     for (int i = n; i >= 1; i--) {
