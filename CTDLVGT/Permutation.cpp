@@ -29,7 +29,7 @@ int main(void)
 {
     cin >> n;
     for (int i = 1; i <= n; i++)
-        X[i] = i;
+        cin>>X[i];
     while (OK)
     {
         cout << "\n Kết quả " << ++dem << ":";

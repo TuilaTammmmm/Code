@@ -50,7 +50,7 @@ int main(void)
         }
         else
         {
-            for (int i = 1; i <= n; i++)
+            for (int i = n; i <= 1; i++)
             {
                 X[i] = i;
                 cout << X[i] << " ";
