@@ -92,6 +92,7 @@ public:
 int main()
 {
     SLinkedListWithTail list;
+    cout<<"Nhap n: ";
     int n;
     cin >> n;
 
