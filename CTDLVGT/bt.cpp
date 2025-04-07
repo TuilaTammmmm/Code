@@ -4,106 +4,102 @@ using namespace std;
 class Node
 {
 public:
-    int data;
-    Node *next;
-    Node(int value)
+    int data; // Dữ liệu của nút
+    Node *next; // Con trỏ trỏ đến nút tiếp theo
+    Node(int value) // Hàm khởi tạo
     {
-        data = value;
-        next = nullptr;
+        data = value; // Gán giá trị cho nút
+        next = nullptr; // Ban đầu nút không trỏ đến nút nào
     }
 };
 
+// Lớp SLinkedListWithTail đại diện cho danh sách liên kết đơn có con trỏ tail
 class SLinkedListWithTail
 {
 private:
-    Node *head;
-    Node *tail;
+    Node *head; // Con trỏ trỏ đến nút đầu tiên
+    Node *tail; // Con trỏ trỏ đến nút cuối cùng
 
 public:
-    SLinkedListWithTail()
+    SLinkedListWithTail() // Hàm khởi tạo
     {
-        head = nullptr;
-        tail = nullptr;
+        head = nullptr; // Ban đầu danh sách rỗng
+        tail = nullptr; // Ban đầu danh sách rỗng
     }
 
+    // Hàm thêm một nút vào cuối danh sách
     void addLast(int i)
     {
-        Node *newNode = new Node(i);
-        if (head == nullptr)
+        Node *newNode = new Node(i); // Tạo nút mới
+        if (head == nullptr) // Nếu danh sách rỗng
         {
-            head = newNode;
-            tail = newNode;
+            head = newNode; // Nút mới là nút đầu tiên
+            tail = newNode; // Nút mới cũng là nút cuối cùng
         }
         else
         {
-            tail->next = newNode;
-            tail = newNode;
+            tail->next = newNode; // Liên kết nút cuối hiện tại với nút mới
+            tail = newNode; // Cập nhật nút cuối
         }
     }
 
+    // Hàm xóa nút cuối cùng trong danh sách
     void Remove()
     {
-        if (head == nullptr)
+        if (head == nullptr) // Nếu danh sách rỗng
         {
+            return; // Không làm gì cả
+        }
+
+        if (head == tail) // Nếu danh sách chỉ có một nút
+        {
+            delete head; // Xóa nút đó
+            head = nullptr; // Cập nhật danh sách rỗng
+            tail = nullptr; // Cập nhật danh sách rỗng
             return;
         }
 
-        if (head == tail)
-        {
-            delete head;
-            head = nullptr;
-            tail = nullptr;
-            return;
-        }
-
-        Node *current = head;
-        while (current->next != tail)
+        Node *current = head; // Bắt đầu từ nút đầu tiên
+        while (current->next != tail) // Tìm nút trước nút cuối
         {
             current = current->next;
         }
 
-        delete tail;
-        tail = current;
-        tail->next = nullptr;
+        delete tail; // Xóa nút cuối
+        tail = current; // Cập nhật nút cuối
+        tail->next = nullptr; // Đảm bảo nút cuối không trỏ đến nút nào
     }
 
+    // Hàm duyệt qua danh sách và in ra các giá trị
     void traverse()
     {
-        Node *current = head;
-        while (current != nullptr)
+        Node *current = head; // Bắt đầu từ nút đầu tiên
+        while (current != nullptr) // Duyệt đến khi hết danh sách
         {
-            cout << current->data << " ";
-            current = current->next;
+            cout << current->data << " "; // In giá trị của nút
+            current = current->next; // Chuyển sang nút tiếp theo
         }
-        cout << endl;
-    }
-
-    ~SLinkedListWithTail()
-    {
-        while (head != nullptr)
-        {
-            Node *temp = head;
-            head = head->next;
-            delete temp;
-        }
+        cout << endl; // Xuống dòng sau khi in xong
     }
 };
 
 int main()
 {
-    SLinkedListWithTail list;
-    cout<<"Nhap n: ";
+    SLinkedListWithTail list; // Tạo danh sách liên kết đơn
+    cout << "Nhap n: "; // tiếng việt: Nhập n
     int n;
-    cin >> n;
+    cin >> n; // Nhập số lượng phần tử
 
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++) // Thêm các phần tử từ 1 đến n
     {
         list.addLast(i);
     }
-    list.traverse();
-    list.Remove();
-    list.traverse();
-    list.addLast(n + 1);
-    list.traverse();
+    list.traverse(); // Duyệt và in danh sách
+
+    list.Remove(); // Xóa phần tử cuối
+    list.traverse(); // Duyệt và in danh sách sau khi xóa
+    
+    list.addLast(n + 1); // Thêm phần tử mới vào cuối danh sách
+    list.traverse(); // Duyệt và in danh sách sau khi thêm
     return 0;
 }
