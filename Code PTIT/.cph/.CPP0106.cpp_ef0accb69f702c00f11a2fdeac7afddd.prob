@@ -1,1 +1,0 @@
-{"name":"Local: CPP0106","url":"d:\\Tam\\Code\\Code PTIT\\CPP0106.cpp","tests":[{"id":1740713461028,"input":"2\n\n123456789012345\n\n12345678987654321","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Tam\\Code\\Code PTIT\\CPP0106.cpp","group":"local","local":true}
