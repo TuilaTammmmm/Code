@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0516
-// SẮP XẾP DANH SÁCH MẶT HÀNG
 
 #include <bits/stdc++.h>
 using namespace std;

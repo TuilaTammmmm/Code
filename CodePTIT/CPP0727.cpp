@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0727
-// TỔNG LỚN NHẤT CỦA DÃY CON KHÔNG KỀ NHAU
 
 #include <bits/stdc++.h>
 using namespace std;

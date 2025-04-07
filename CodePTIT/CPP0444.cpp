@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0444
-// TÌM KIẾM TRONG DÃY SẮP XẾP VÒNG
 
 #include <bits/stdc++.h>
 #define endl '\n'

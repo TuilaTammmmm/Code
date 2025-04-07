@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0531
-// BỐN ĐIỂM TRÊN MẶT PHẲNG
 
 #include <bits/stdc++.h>
 using namespace std;

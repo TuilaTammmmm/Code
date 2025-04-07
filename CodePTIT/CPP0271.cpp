@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0271
-// LÀM MỊN ẢNH
 
 #include <bits/stdc++.h>
 using namespace std;

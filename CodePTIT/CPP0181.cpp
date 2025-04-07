@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0181
-// SỐ LẶP LẠI
 
 #include <bits/stdc++.h>
 #define endl '\n'
@@ -35,4 +33,3 @@ int main()
     return 0;
 }
 
-// Lặp lại Ucln(p, q) lần a

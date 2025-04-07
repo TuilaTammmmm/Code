@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0323
-// PHÉP CHIA DƯ CỦA SỐ NGUYÊN LỚN
 
 #include <bits/stdc++.h>
 #define endl '\n'

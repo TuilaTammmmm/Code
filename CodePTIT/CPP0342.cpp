@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0342
-// TÁCH SỐ VÀ TÍNH TỔNG
 
 #include <bits/stdc++.h>
 #define endl '\n'

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0434
-// BIẾN ĐỔI DÃY SỐ - 2
 
 #include <bits/stdc++.h>
 using namespace std;

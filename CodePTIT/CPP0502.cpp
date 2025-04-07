@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0502
-// CẤU TRÚC THÍ SINH
 
 #include <bits/stdc++.h>
 using namespace std;

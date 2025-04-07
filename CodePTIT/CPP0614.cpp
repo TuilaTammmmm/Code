@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0614
-// DANH SÁCH ĐỐI TƯỢNG NHÂN VIÊN
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -18,7 +16,6 @@ public:
         getline(cin, a.dchi);
         cin >> a.msthue >> a.ngay;
     
-        // Chuẩn hóa mnv
         string s = to_string(stt++);
         while (s.length() < 5) {
             s = "0" + s;

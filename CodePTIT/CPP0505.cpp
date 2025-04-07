@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0505
-// CẤU TRÚC NHÂN VIÊN
 
 #include <bits/stdc++.h>
 using namespace std;

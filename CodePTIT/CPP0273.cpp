@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0273
-// ĐIỂM CÂN BẰNG
 
 #include <bits/stdc++.h>
 using namespace std;

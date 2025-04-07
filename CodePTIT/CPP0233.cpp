@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0233
-// MA TRẬN XOẮN ỐC - 2
 
 #include <bits/stdc++.h>
 #define endl '\n'

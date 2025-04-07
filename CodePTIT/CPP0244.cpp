@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0244
-// LIỆT KÊ SỐ KHÁC NHAU
 
 #include <bits/stdc++.h>
 #define endl '\n'

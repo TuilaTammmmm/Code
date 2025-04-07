@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0129
-// ƯỚC SỐ CỦA GIAI THỪA
 
 #include <bits/stdc++.h>
 #define endl '\n'

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0424
-// GHÉP DÃY SỐ
 
 #include <bits/stdc++.h>
 #define endl '\n'

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0351
-// CHUẨN HÓA HỌ TÊN
 
 #include <bits/stdc++.h>
 #define endl '\n'

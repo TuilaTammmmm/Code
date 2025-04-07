@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0518
-// SẮP XẾP DANH SÁCH NHÂN VIÊN
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -68,4 +66,3 @@ int main(){
     return 0;
 }
 
-//! Note: Ngày sinh nhập xuất theo định dạng mm/dd/yyyy

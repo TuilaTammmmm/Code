@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0307
-// HIỆU CỦA HAI TẬP TỪ
 
 #include <bits/stdc++.h>
 #define endl '\n'

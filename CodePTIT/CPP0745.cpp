@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0745
-// TÍNH SỐ FIBONACCI LỚN
 
 #include <bits/stdc++.h>
 #define endl '\n'

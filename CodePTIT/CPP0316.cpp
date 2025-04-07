@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0316
-// SỐ MAY MẮN - 2
 
 #include <bits/stdc++.h>
 using namespace std;

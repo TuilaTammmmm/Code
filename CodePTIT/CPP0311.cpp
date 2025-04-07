@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0311
-// SẮP ĐẶT XÂU KÝ TỰ - 1
 
 #include <bits/stdc++.h>
 using namespace std;

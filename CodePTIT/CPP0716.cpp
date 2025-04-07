@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0716
-// ĐẾM SỐ CÁCH DI CHUYỂN
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -51,4 +49,3 @@ int main() {
     return 0;
 }
 
-// test co a[i] = 0

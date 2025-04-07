@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0154
-// TỔNG CHIA DƯ CHO K
 
 #include <bits/stdc++.h>
 #define endl '\n'

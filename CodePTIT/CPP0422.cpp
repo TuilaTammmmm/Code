@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0422
-// SỐ 0 Ở CUỐI DÃY
 
 #include <bits/stdc++.h>
 #define endl '\n'

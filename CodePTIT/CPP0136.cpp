@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0136
-// ĐẾM SỐ CÓ BA ƯỚC SỐ
 
 #include <bits/stdc++.h>
 #define endl '\n'

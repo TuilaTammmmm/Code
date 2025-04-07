@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0433
-// SẮP XẾP THEO SỐ LẦN XUẤT HIỆN
 
 #include <bits/stdc++.h>
 using namespace std;

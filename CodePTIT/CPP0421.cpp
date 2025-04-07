@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0421
-// SẮP ĐẶT DÃY SỐ
 
 #include <bits/stdc++.h>
 #define endl '\n'

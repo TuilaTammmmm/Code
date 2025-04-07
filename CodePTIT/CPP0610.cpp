@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0610
-// TÍNH TỔNG HAI ĐỐI TƯỢNG PHÂN SỐ
 
 #include <bits/stdc++.h>
 using namespace std;

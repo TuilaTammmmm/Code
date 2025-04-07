@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0313
-// LOẠI BỎ TỪ TRONG XÂU
 
 #include <bits/stdc++.h>
 using namespace std;

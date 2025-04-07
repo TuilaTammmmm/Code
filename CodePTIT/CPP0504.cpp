@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0504
-// CẤU TRÚC SINH VIÊN
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -16,7 +14,6 @@ void nhap(SinhVien &a)
     getline(cin, a.name);
     cin >> a.classs >> a.date >> a.gpa;
 
-    // Chuẩn hóa ngày sinh
     if (a.date.length() == 8)
         a.date = '0' + a.date.substr(0, 2) + '0' + a.date.substr(2);
     else if (a.date.length() == 9) {

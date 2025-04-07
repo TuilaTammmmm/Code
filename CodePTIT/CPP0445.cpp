@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0445
-// SỐ NHỎ NHẤT VÀ NHỎ THỨ HAI
 
 #include <bits/stdc++.h>
 #define endl '\n'

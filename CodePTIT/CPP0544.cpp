@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0544
-// DIỆN TÍCH HÌNH TRÒN NGOẠI TIẾP TAM GIÁC
 
 #include <bits/stdc++.h>
 #define PI 3.141592653589793238

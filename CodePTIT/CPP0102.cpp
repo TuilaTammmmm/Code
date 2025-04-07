@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0102
-// CHỮ HOA – CHỮ THƯỜNG
 
 #include <bits/stdc++.h>
 #define endl '\n'

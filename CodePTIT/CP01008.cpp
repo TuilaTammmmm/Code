@@ -1,6 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01008
-// QUAY VÒNG DÃY SỐ
-
 #include <bits/stdc++.h>
 #define endl '\n'
 using namespace std;

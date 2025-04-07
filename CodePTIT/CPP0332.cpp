@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0332
-// ĐỊA CHỈ EMAIL - 1
 
 #include <bits/stdc++.h>
 using namespace std;

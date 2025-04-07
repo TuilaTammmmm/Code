@@ -1,15 +1,11 @@
-// https://code.ptit.edu.vn/student/question/CPP0735
-// MA TRẬN CON LỚN NHẤT
 
 #include <bits/stdc++.h>
 using namespace std;
 
 void solve(vector<int> &a, int n) {
-    // Max min trên đoạn tịnh tiến
     vector<int> L(n), R(n);
     stack<int> st;
 
-    // Solve L[]
     for (int i = 0; i < n; ++i) {
         while (!st.empty() && a[st.top()] >= a[i]) {
             st.pop();
@@ -21,12 +17,10 @@ void solve(vector<int> &a, int n) {
         st.push(i);
     }
 
-    // Reset stack
     while (!st.empty()) {
         st.pop();
     }
 
-    // Solve R[]
     for (int i = n - 1; i >= 0; --i) {
         while (!st.empty() && a[st.top()] >= a[i]) {
             st.pop();
@@ -38,14 +32,12 @@ void solve(vector<int> &a, int n) {
         st.push(i);
     }
     
-    // Update a[]
     for (int i = 0; i < n; ++i) {
         a[i] = R[i] - L[i] + 1;
     }
 }
 
 void TestCase() {
-    // Read
     int n, m;
     cin >> n >> m;
     vector<vector<int>> a(n, vector<int>(m, 0));
@@ -55,7 +47,6 @@ void TestCase() {
         }
     }
 
-    // Cộng dồn
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             if (i > 0 && a[i][j] != 0)
@@ -63,10 +54,8 @@ void TestCase() {
         }
     }
 
-    // Solve
     int res = 0;
     for (int i = 0; i < n; ++i) {
-        // a[i][j] là chiều cao, b[j] là chiều rộng
         vector<int> b(a[i].begin(), a[i].end());
         solve(b, m);
         for (int j = 0; j < m; ++j) {

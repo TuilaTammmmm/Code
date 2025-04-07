@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0448
-// ĐẾM SỐ LẦN XUẤT HIỆN
 
 #include <bits/stdc++.h>
 #define endl '\n'

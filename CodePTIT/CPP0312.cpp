@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0312
-// XÂU PANGRAM
 
 #include <bits/stdc++.h>
 #define endl '\n'
@@ -13,7 +11,6 @@ void TestCase()
     int dd[26] = {0};
     for (auto x : s)
         dd[x - 'a']++;
-    int d = 0; // Số kí tự chưa xuất hiện
     for (int i = 0; i < 26; ++i)
     {
         if (!dd[i])

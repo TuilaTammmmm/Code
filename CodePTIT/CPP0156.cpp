@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0156
-// ĐẾM SỐ NGHIỆM CỦA PHƯƠNG TRÌNH ĐỒNG DƯ
 
 #include <bits/stdc++.h>
 using namespace std;

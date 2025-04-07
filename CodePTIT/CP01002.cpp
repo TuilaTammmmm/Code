@@ -1,6 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01002
-// TỔNG GIAI THỪA
-
 #include <bits/stdc++.h>
 using namespace std;
 

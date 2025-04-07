@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0711
-// LIỆT KÊ XÂU NHỊ PHÂN
 
 #include <bits/stdc++.h>
 #define endl '\n'

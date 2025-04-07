@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0107
-// CHẤM ĐIỂM TRẮC NGHIỆM
 
 #include <bits/stdc++.h>
 #define endl '\n'

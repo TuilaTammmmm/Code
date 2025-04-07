@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0513
-// DANH SÁCH SINH VIÊN - 1
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0214
-// SỐ LỚN NHẤT CỦA DÃY CON LIÊN TỤC
 
 #include <bits/stdc++.h>
 #define endl '\n'

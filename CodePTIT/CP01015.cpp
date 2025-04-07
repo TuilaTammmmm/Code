@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01015
-// TÌM SỐ DƯ
 
 #include <bits/stdc++.h>
 #define endl '\n'

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0739
-// GIẢI MÃ TĂNG GIẢM
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -11,7 +9,6 @@ void TestCase()
     vector<int> v;
     int minn = 1, posI = 0;
 
-    // Xét s[0]
     if (s[0] == 'I') {
         v.push_back(1);
         v.push_back(2);

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0106
-// SỐ THUẬN NGHỊCH
 
 #include <bits/stdc++.h>
 #define endl '\n'

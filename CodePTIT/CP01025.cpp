@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01025
-// DI CHUYỂN ROBOT
 
 #include <bits/stdc++.h>
 using namespace std;

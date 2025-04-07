@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0353
-// ĐIỆN THOẠI CỤC GẠCH
 
 #include <bits/stdc++.h>
 #define endl '\n'

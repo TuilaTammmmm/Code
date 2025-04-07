@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0802
-// TÍNH TỔNG
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -11,14 +9,12 @@ void solve(string s) {
         if (s[i] < '0' || s[i] > '9') return;
     }
     
-    // Kiểm tra số âm, nếu có loại dấu -
     bool isNeg = 0;
     if (s[0] == '-') {
         s.erase(0, 1);
         isNeg = 1;
     }
     
-    if (s.length() > 10) return; // quá int
     long long num = 0;
     for (int i = 0; i < s.length(); ++i) {
         num = num * 10 + (s[i] - '0');

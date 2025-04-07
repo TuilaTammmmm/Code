@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0427
-// NHÂN ĐÔI CẶP SỐ BẰNG NHAU
 
 #include <bits/stdc++.h>
 using namespace std;

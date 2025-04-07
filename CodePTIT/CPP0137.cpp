@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0137
-// LIỆT KÊ SỐ CÓ BA ƯỚC SỐ TRONG KHOẢNG
 
 #include <bits/stdc++.h>
 #define endl '\n'

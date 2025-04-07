@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0210
-// HIỆU LỚN NHẤT CỦA CẶP PHẦN TỬ ĐÚNG THỨ TỰ
 
 #include <bits/stdc++.h>
 #define endl '\n'
@@ -17,7 +15,6 @@ void TestCase()
     {
         for (int j = i + 1; j < n; ++j)
         {
-            if (a[j] <= a[i]) // note
                 continue;
             r = max(r, a[j] - a[i]);
         }

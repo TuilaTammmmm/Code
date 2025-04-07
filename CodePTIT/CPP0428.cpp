@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0428
-// TRỘN HAI DÃY VÀ SẮP XẾP
 
 #include <bits/stdc++.h>
 #define endl '\n'

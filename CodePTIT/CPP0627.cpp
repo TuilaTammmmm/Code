@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0627
-// TÌM KIẾM GIẢNG VIÊN
 
 #include <bits/stdc++.h>
 using namespace std;

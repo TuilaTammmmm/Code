@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0624
-// LIỆT KÊ SINH VIÊN THEO NGÀNH
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -65,4 +63,3 @@ int main() {
     return 0;
 }
 
-// Vẫn có các sinh viên KT, ĐT, VT học lớp E

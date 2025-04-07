@@ -1,6 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01004
-// SỐ XUẤT HIỆN NHIỀU NHẤT
-
 #include <bits/stdc++.h>
 #define endl '\n'
 using namespace std;

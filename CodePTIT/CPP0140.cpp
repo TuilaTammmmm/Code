@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0140
-// SỐ HOÀN HẢO
 
 #include <bits/stdc++.h>
 #define endl '\n'

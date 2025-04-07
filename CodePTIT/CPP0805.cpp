@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0805
-// HỢP VÀ GIAO CỦA HAI FILE VĂN BẢN
 
 #include <bits/stdc++.h>
 using namespace std;

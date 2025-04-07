@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0738
-// CỘNG 1 VÀ NHÂN ĐÔI
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -11,7 +9,6 @@ void TestCase() {
 
     int ans = 0;
     while (1) {
-        int d = 0; // dem so phan tu = 0
         for (int i = 0; i < n; ++i) {
             if (a[i] % 2 == 1) {
                 a[i]--; ans++;

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0720
-// DÃY SỐ BITONIC
 
 #include <bits/stdc++.h>
 using namespace std;

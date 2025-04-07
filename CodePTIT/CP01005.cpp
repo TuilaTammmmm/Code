@@ -1,6 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01005
-// TẦN SUẤT LẺ
-
 #include <bits/stdc++.h>
 #define endl '\n'
 using namespace std;

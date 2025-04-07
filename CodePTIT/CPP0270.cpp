@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0270
-// TÍCH CHẬP
 
 #include <bits/stdc++.h>
 using namespace std;

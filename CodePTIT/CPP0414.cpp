@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0414
-// SẮP XẾP CHỮ SỐ
 
 #include <bits/stdc++.h>
 #define endl '\n'

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0734
-// HÌNH CHỮ NHẬT LỚN NHẤT - 2
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -53,7 +51,6 @@ void TestCase()
         }
     }
 
-    // Tính chiều cao của hcn tại (i,j) với (i,j) là đáy
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             if (a[i][j] == 0 || i == 0)
@@ -64,7 +61,6 @@ void TestCase()
     }
 
     int res = 0;
-    // Tìm chiều rộng max của hcn tại (i,j) với a[i][j] là chiều cao
     for (int i = 0; i < n; ++i) {
         vector<int> b(a[i].begin(), a[i].end());
         solve(b);

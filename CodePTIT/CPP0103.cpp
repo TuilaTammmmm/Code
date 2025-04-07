@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0103
-// TÍNH TỔNG PHÂN THỨC
 
 #include <bits/stdc++.h>
 using namespace std;

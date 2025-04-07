@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0726
-// PHÉP CHIA DƯ CỦA TÍCH HAI SỐ
 
 #include <bits/stdc++.h>
 using namespace std;

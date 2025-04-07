@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0113
-// SỐ MAY MẮN
 
 #include <bits/stdc++.h>
 #define endl '\n'

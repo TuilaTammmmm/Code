@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0139
-// SỐ SMITH
 
 #include <bits/stdc++.h>
 #define endl '\n'

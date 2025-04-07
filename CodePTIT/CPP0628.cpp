@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0628
-// DANH SÁCH DOANH NGHIỆP NHẬN SINH VIÊN THỰC TẬP - 1
 
 #include <bits/stdc++.h>
 using namespace std;

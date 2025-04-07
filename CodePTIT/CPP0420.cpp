@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0420
-// SẮP XẾP THEO KHOẢNG CÁCH
 
 #include <bits/stdc++.h>
 using namespace std;

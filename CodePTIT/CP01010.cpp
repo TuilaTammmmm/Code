@@ -1,6 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01010
-// ĐIỂM CÂN BẰNG
-
 #include <bits/stdc++.h>
 #define endl '\n'
 using namespace std;
@@ -10,7 +7,6 @@ void TestCase()
     int n;
     cin >> n;
     int a[n + 1];
-    int f[n + 1]; // Cộng dồn
     f[0] = 0;
     for (int i = 1; i <= n; ++i)
     {

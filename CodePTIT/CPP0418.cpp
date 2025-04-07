@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0418
-// HỢP VÀ GIAO CỦA HAI DÃY SỐ -1
 
 #include <bits/stdc++.h>
 using namespace std;

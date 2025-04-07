@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0534
-// SỐ THUẬN NGHỊCH GIẢM DẦN
 
 #include <bits/stdc++.h>
 using namespace std;

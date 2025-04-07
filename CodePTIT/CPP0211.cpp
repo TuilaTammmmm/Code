@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0211
-// KHOẢNG CÁCH XA NHẤT
 
 #include <bits/stdc++.h>
 using namespace std;

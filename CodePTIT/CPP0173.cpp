@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0173
-// CHIA HẾT CHO BA SỐ NGUYÊN
 
 #include <bits/stdc++.h>
 #define endl '\n'

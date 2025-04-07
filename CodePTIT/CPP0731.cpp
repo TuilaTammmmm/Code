@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0731
-// SỐ BƯỚC DỊCH CHUYỂN ÍT NHẤT
 
 #include <bits/stdc++.h>
 using namespace std;

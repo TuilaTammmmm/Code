@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0225
-// BIẾN ĐỔI MA TRẬN
 
 #include <bits/stdc++.h>
 #define endl '\n'
@@ -10,7 +8,6 @@ void TestCase()
     int n;
     cin >> n;
     int a[n][n], row[n], col[n], maxx = 0;
-    bool flag = 0; // 0: hàng có tổng max, 1: cột có tổng max
     for (int i = 0; i < n; ++i) {
         row[i] = 0;
         for (int j = 0; j < n; ++j) {

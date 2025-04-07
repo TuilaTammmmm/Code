@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0326
-// TÍCH HAI SỐ NGUYÊN LỚN
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -66,4 +64,3 @@ int main()
     return 0;
 }
 
-// Dùng insert của string để không TLE :(

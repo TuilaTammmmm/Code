@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0733
-// TÌM ĐƯỜNG TRONG MA TRẬN NHỊ PHÂN
 
 #include <bits/stdc++.h>
 using namespace std;

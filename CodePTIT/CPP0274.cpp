@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0274
-// ĐẾM SỐ PHẦN TỬ LẶP LẠI
 
 #include <bits/stdc++.h>
 #define endl '\n'

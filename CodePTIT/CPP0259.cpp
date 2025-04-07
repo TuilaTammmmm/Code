@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0259
-// TÍCH MA TRẬN
 
 #include <bits/stdc++.h>
 using namespace std;

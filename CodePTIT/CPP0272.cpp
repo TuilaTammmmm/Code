@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0272
-// TÍNH TOÁN TRÊN DÃY SỐ
 
 #include <bits/stdc++.h>
 using namespace std;

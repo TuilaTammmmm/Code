@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0601
-// KHAI BÁO LỚP SINH VIÊN - 1
 
 #include <bits/stdc++.h>
 #define a() a;

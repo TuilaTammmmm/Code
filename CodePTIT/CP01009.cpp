@@ -1,6 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01009
-// SẮP XẾP THEO THỨ TỰ XUẤT HIỆN
-
 #include <bits/stdc++.h>
 #define endl '\n'
 using namespace std;

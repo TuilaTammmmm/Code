@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0152
-// CHIA DƯ
 
 #include <bits/stdc++.h>
 #define endl '\n'

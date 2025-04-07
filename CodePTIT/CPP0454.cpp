@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0454
-// TAM GIÁC VUÔNG
 
 #include <bits/stdc++.h>
 using namespace std;

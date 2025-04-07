@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0335
-// TÌM SỐ LỚN NHẤT TRONG XÂU
 
 #include <bits/stdc++.h>
 #define endl '\n'

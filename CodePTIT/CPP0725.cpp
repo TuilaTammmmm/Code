@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0725
-// TÍNH SỐ TỔ HỢP
 
 #include <bits/stdc++.h>
 #define faster() ios_base::sync_with_stdio(0);

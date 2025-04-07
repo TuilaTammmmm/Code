@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0203
-// SỐ NHỎ NHẤT CHƯA XUẤT HIỆN
 
 #include <bits/stdc++.h>
 #define endl '\n'

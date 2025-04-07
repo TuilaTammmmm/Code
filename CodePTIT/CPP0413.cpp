@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0413
-// SẮP XẾP XEN KẼ - 1
 
 #include <bits/stdc++.h>
 #define endl '\n'

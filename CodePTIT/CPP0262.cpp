@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0262
-// TẬP HỢP NGUYÊN TỐ CÙNG NHAU
 
 #include <bits/stdc++.h>
 using namespace std;

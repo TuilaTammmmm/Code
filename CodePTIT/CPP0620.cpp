@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0620
-// SẮP XẾP SINH VIÊN THEO LỚP
 
 #include <bits/stdc++.h>
 using namespace std;

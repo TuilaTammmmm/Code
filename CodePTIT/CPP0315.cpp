@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0315
-// ĐỔI CHỖ CHỮ SỐ
 
 #include <bits/stdc++.h>
 #define endl '\n'
@@ -17,7 +15,6 @@ void TestCase()
     }
     while (s[j] >= s[i]) j--;
 
-    // Note:
     while (s[j] == s[j - 1]) j--;
 
     swap(s[i], s[j]);

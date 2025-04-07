@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0242
-// DÃY SỐ NHỊ PHÂN
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0449
-// KHOẢNG CÁCH BẰNG X
 
 #include <bits/stdc++.h>
 #define endl '\n'
@@ -28,7 +26,6 @@ void TestCase()
     for (int i = 0; i < n; ++i) {
         if (a[i] + x > a[n - 1])
             break;
-        // x có thể âm nên bs từ 0
         if (bs(a, 0, n - 1, a[i] + x)) {
             cout << "1\n";
             return;

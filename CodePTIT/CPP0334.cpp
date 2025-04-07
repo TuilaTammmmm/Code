@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0334
-// TÍNH TỔNG CÁC SỐ TRONG XÂU
 
 #include <bits/stdc++.h>
 #define endl '\n'

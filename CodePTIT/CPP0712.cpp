@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0712
-// LIỆT KÊ TỔ HỢP
 
 #include <bits/stdc++.h>
 using namespace std;

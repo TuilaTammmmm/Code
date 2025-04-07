@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0730
-// TỔNG LỚN NHẤT CỦA DÃY CON LIÊN TỤC
 
 #include <bits/stdc++.h>
 using namespace std;

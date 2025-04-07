@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0714
-// HOÁN VỊ LIỀN KỀ PHÍA TRƯỚC
 
 #include <bits/stdc++.h>
 #define endl '\n'

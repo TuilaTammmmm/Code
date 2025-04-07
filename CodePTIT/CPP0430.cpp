@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0430
-// BỔ SUNG PHẦN TỬ
 
 #include <bits/stdc++.h>
 #define endl '\n'

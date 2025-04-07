@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0213
-// KIỂM TRA DÃY FIBONACCI
 
 #include <bits/stdc++.h>
 #define endl '\n'

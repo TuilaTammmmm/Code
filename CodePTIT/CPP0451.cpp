@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0451
-// PHẦN TỬ GẦN NHẤT
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -19,8 +17,6 @@ void TestCase()
         cout << a[i - z] << " ";
     }
 
-    // Note: Phần tử khác x về index chứ không phải khác x về giá trị
-    // Đoạn này mình làm while (a[j] == x) j++; và sai nên rút ra được vậy.
     if (a[j] == x) j++;
     for (int z = 0; z < k / 2; ++z) {
         cout << a[j + z] << " ";

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP204C4000
-// CẤU TRÚC SINH VIÊN
 
 #include <bits/stdc++.h>
 using namespace std;

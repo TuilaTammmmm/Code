@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0412
-// SẮP XẾP 0 -1 - 2
 
 #include <bits/stdc++.h>
 #define endl '\n'

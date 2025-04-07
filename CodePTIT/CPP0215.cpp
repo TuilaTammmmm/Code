@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0215
-// TỔNG LỚN NHẤT
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0425
-// SẮP XẾP CHẴN LẺ
 
 #include <bits/stdc++.h>
 using namespace std;

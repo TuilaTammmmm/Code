@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0243
-// SẮP ĐẶT HAI DÃY SỐ
 
 #include <bits/stdc++.h>
 using namespace std;

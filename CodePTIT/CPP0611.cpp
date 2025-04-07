@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0611
-// DANH SÁCH ĐỐI TƯỢNG SINH VIÊN - 1
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -16,13 +14,11 @@ public:
         getline(is, a.ten);
         is >> a.lop >> a.nsinh >> a.gpa;
 
-        // Chuẩn hóa msv
         string s = to_string(id++);
         while (s.length() < 3)
             s = '0' + s;
         a.msv = "B20DCCN" + s;
 
-        // Chuẩn hóa ngày sinh
         if (a.nsinh[2] != '/') a.nsinh.insert(0, "0");
         if (a.nsinh[5] != '/') a.nsinh.insert(3, "0");
         return is;

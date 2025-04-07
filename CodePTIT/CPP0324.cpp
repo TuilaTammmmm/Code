@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0324
-// PHÉP CHIA DƯ CỦA LŨY THỪA SỐ NGUYÊN LỚN
 
 #include <bits/stdc++.h>
 using namespace std;

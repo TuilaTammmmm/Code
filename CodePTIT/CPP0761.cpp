@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0761
-// ƯỚC SỐ CHUNG LỚN NHẤT CỦA SỐ NGUYÊN LỚN
 
 #include <bits/stdc++.h>
 using namespace std;

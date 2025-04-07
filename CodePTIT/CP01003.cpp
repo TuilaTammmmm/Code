@@ -1,6 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01003
-// SỐ THUẦN NGUYÊN TỐ
-
 #include <bits/stdc++.h>
 using namespace std;
 

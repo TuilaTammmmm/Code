@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0124
-// PHÂN TÍCH THỪA SỐ NGUYÊN TỐ - 2
 
 #include <bits/stdc++.h>
 using namespace std;

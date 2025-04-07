@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0143
-// SỐ FIBONACCI THỨ N
 
 #include <bits/stdc++.h>
 #define endl '\n'

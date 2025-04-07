@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0109
-// CÂN BẰNG CHẴN LẺ
 
 #include <bits/stdc++.h>
 using namespace std;

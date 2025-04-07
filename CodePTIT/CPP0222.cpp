@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0222
-// ĐẾM PHẦN TỬ GIỐNG NHAU
 
 #include <bits/stdc++.h>
 #define endl '\n'
@@ -9,7 +7,6 @@ void TestCase()
 {
     int n;
     cin >> n;
-    vector<int> v(1e5 + 1, 0); // Vector đánh dấu
     for (int i = 1; i <= n; ++i) {
         set<int> s;
         for (int j = 1; j <= n; ++j) {

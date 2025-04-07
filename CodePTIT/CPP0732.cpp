@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0732
-// TỔNG LỚN NHẤT CỦA DÃY CON TĂNG DẦN
 
 #pragma GCC optimize("O2")
 #include <bits/stdc++.h>

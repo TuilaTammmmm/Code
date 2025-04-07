@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0723
-// TÍCH GIAI THỪA CÁC CHỮ SỐ
 
 #include <bits/stdc++.h>
 #define endl '\n'

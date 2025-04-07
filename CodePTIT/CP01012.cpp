@@ -1,6 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01012
-// BỘ BA SỐ PYTAGO
-
 #include <bits/stdc++.h>
 #define endl '\n'
 using namespace std;
@@ -19,8 +16,6 @@ void TestCase()
     {
         for (int j = i + 1; j + 1 < n; ++j)
         {
-            long long bp = a[i] * a[i] + a[j] * a[j]; // bp: bình phương cạnh huyền
-            long long sq = sqrt(bp);                  // sq: cạnh huyền
             if (sq * sq != bp)
                 continue;
 

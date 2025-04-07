@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0336
-// XÂU CON NHỎ NHẤT - 1
 
 #include <bits/stdc++.h>
 using namespace std;

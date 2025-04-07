@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0119
-// ƯỚC SỐ CHIA HẾT CHO 2
 
 #include <bits/stdc++.h>
 #define endl '\n'

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0117
-// TÍNH TỔNG CHỮ SỐ
 
 #include <bits/stdc++.h>
 #define endl '\n'

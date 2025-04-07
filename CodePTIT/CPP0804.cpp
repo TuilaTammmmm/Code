@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0804
-// LIỆT KÊ TỪ KHÁC NHAU
 
 #include <bits/stdc++.h>
 using namespace std;

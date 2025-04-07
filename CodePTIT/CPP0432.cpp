@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0432
-// SẮP XẾP THEO CHỮ SỐ
 
 #include <bits/stdc++.h>
 using namespace std;

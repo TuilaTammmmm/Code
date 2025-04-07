@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0121
-// ƯỚC SỐ CHUNG - BỘI SỐ CHUNG
 
 #include <bits/stdc++.h>
 using namespace std;

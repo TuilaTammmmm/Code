@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP04012
-// GIÁ TRỊ NHỎ NHẤT CỦA XÂU
 
 #include <bits/stdc++.h>
 

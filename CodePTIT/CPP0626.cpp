@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0626
-// DANH SÁCH GIẢNG VIÊN THEO BỘ MÔN
 
 #include <bits/stdc++.h>
 using namespace std;

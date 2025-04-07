@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0452
-// PHẦN TỬ CHUNG CỦA BA DÃY SỐ
 
 #include <bits/stdc++.h>
 using namespace std;

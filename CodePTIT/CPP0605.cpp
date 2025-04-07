@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0605
-// KHAI BÁO LỚP PHÂN SỐ
 
 #include <bits/stdc++.h>
 using namespace std;

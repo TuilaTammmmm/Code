@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0423
-// SỐ NHỎ HƠN K
 
 #include <bits/stdc++.h>
 using namespace std;

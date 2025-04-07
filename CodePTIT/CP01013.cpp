@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP01013
-// SỐ ĐẦU TIÊN BỊ LẶP
 
 #include <bits/stdc++.h>
 #define endl '\n'

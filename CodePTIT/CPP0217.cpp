@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0217
-// PHẦN TỬ NHỎ NHẤT THỨ K CỦA MA TRẬN
 
 #include <bits/stdc++.h>
 #define endl '\n'

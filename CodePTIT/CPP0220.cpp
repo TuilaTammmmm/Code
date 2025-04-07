@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0220
-// BIÊN CỦA MA TRẬN
 
 #include <bits/stdc++.h>
 #define endl '\n'

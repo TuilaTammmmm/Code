@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0361
-// MẬT KHẨU
 
 #include <bits/stdc++.h>
 using namespace std;

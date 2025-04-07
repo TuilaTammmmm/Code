@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0416
-// ĐẾM CẶP PHẦN TỬ CÓ TỔNG BẰNG K
 
 #include <bits/stdc++.h>
 #define endl '\n'
@@ -18,10 +16,8 @@ void TestCase()
     {
         if (a[i] > k / 2)
             break;
-        int l = lower_bound(a + i + 1, a + n, k - a[i]) - a; // index đầu tiên có phần tử (k - a[i]) kể từ vị trí i + 1
         if (l != n)
         {
-            int u = upper_bound(a + i + 1, a + n, k - a[i]) - a; // index đầu tiên có phần tử > (k - a[i]) kể từ vị trí i + 1
             d += u - l;
         }
     }

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CP04013
-// TÍCH LỚN NHẤT
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -8,8 +6,6 @@ int main()
 {
     int sl;
     cin >> sl;
-    int a[10000], n = 0; // Số dương
-    int b[10000], m = 0; // Số âm
     for (int i = 0; i < sl; ++i)
     {
         int x;

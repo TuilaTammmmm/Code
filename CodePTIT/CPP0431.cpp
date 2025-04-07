@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0431
-// ĐẾM CẶP PHẦN TỬ CÓ HIỆU NHỎ HƠN K
 
 #include <bits/stdc++.h>
 using namespace std;

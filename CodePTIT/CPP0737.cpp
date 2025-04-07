@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0737DÃY CON TRUNG BÌNH LỚN NHẤT
-// DÃY CON TRUNG BÌNH LỚN NHẤT
 
 #include <bits/stdc++.h>
 using namespace std;

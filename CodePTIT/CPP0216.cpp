@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0216
-// DÃY MOUNTAIN
 
 #include <bits/stdc++.h>
 using namespace std;

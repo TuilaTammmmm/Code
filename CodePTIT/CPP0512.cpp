@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0512
-// PHÉP TOÁN VỚI PHÂN SỐ
 
 #include <bits/stdc++.h>
 using namespace std;

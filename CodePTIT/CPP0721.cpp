@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0721
-// DÃY CON TĂNG DÀI NHẤT
 
 #include <bits/stdc++.h>
 using namespace std;

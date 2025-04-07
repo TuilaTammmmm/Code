@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0429
-// SỬA ĐÈN
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0318
-// BIỂN SỐ ĐẸP
 
 #include <bits/stdc++.h>
 #define endl '\n'

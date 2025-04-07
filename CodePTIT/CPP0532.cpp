@@ -1,5 +1,3 @@
-// https://code.ptit.edu.vn/student/question/CPP0532
-// DIỆN TÍCH ĐA GIÁC
 
 #include <bits/stdc++.h>
 using namespace std;
