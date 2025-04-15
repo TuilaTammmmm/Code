@@ -1,24 +1,23 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
 using namespace std;
 
-int n;
-vector<string> s(n);
-
-string check() {
-    string min = s[0];
-    for (int i = 1; i < s.size(); i++) {
-        if (s[i]+'0' < min+'0')
-            min = s[i];
-    }
-    return min;
-}
-
 int main() {
-    cin >> n;
-    for (int i = 0; i < n; i++)
-        cin >> s[i];
-    string smallest = check();
-    cout << smallest;
+    int n;
+    cin >> n;  // Read the number of elements
+    vector<string> numbers(n);
+
+    for (int i = 0; i < n; i++) {
+        cin >> numbers[i];  // Read the large numbers as strings
+    }
+
+    // Find the smallest number using string comparison
+    string min_number = *min_element(numbers.begin(), numbers.end());
+
+    cout << min_number << endl;  // Output the smallest number
+
     return 0;
 }
-
