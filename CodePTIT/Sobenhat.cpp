@@ -5,19 +5,36 @@
 
 using namespace std;
 
+// Hàm so sánh hai số lớn dưới dạng chuỗi
+bool isSmaller(const string& num1, const string& num2) {
+    if (num1.length() < num2.length()) {
+        return true;
+    }
+    if (num1.length() > num2.length()) {
+        return false;
+    }
+    return num1 < num2;
+}
+
 int main() {
     int n;
-    cin >> n;  // Read the number of elements
-    vector<string> numbers(n);
+    cin >> n;
+    cin.ignore(); // Đọc bỏ ký tự newline sau khi đọc n
 
-    for (int i = 0; i < n; i++) {
-        cin >> numbers[i];  // Read the large numbers as strings
+    string smallest_num;
+    for (int i = 0; i < n; ++i) {
+        string current_num;
+        cin >> current_num;
+        if (i == 0) {
+            smallest_num = current_num;
+        } else {
+            if (isSmaller(current_num, smallest_num)) {
+                smallest_num = current_num;
+            }
+        }
     }
 
-    // Find the smallest number using string comparison
-    string min_number = *min_element(numbers.begin(), numbers.end());
-
-    cout << min_number << endl;  // Output the smallest number
+    cout << smallest_num << endl;
 
     return 0;
 }
