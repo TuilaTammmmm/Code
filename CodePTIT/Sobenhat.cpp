@@ -1,14 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main()
-{
-    int n;
+
+int n;
+vector<string> s(n);
+
+string check() {
+    string min = s[0];
+    for (int i = 1; i < s.size(); i++) {
+        if (s[i]+'0' < min+'0')
+            min = s[i];
+    }
+    return min;
+}
+
+int main() {
     cin >> n;
-    vector<int> s(n);
     for (int i = 0; i < n; i++)
         cin >> s[i];
-    sort(s.begin(), s.end());
-    cout << s[0];
+    string smallest = check();
+    cout << smallest;
     return 0;
 }
 
