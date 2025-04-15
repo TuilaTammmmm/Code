@@ -1,105 +1,66 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
 #include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <sstream>
-
 using namespace std;
 
-string units[] = {"khong", "mot", "hai", "ba", "bon", "nam", "sau", "bay", "tam", "chin"};
-
-string teens[] = {"muoi", "muoi mot", "muoi hai", "muoi ba", "muoi bon", "muoi lam", "muoi sau", "muoi bay", "muoi tam", "muoi chin"};
-
-string tens[] = {"", "", "hai muoi", "ba muoi", "bon muoi", "nam muoi", "sau muoi", "bay muoi", "tam muoi", "chin muoi"};
-
-string readUnit(int n) {
-    return units[n];
+string res(char s)
+{
+    if (s == '1') return "mot";
+    if (s == '2') return "hai";
+    if (s == '3') return "ba";
+    if (s == '4') return "bon";
+    if (s == '5') return "nam";
+    if (s == '6') return "sau";
+    if (s == '7') return "bay";
+    if (s == '8') return "tam";
+    if (s == '9') return "chin";
 }
 
-string readTwoDigits(int n) {
-    if (n < 10) {
-        return readUnit(n);
-    } else if (n < 20) {
-        return teens[n - 10];
-    } else {
-        int ten = n / 10;
-        int unit = n % 10;
-        if (unit == 0) {
-            return tens[ten];
-        } else {
-            return tens[ten] + " " + readUnit(unit);
+int main()
+{
+    freopen("data.in", "r", stdin);
+    int tc;
+    cin >> tc;
+    while (tc--) 
+ 
+    {
+        string n;
+        cin >> n;
+        if (n == "0") cout << "khong" << endl;
+        else if (n == "100") cout << "mot tram" << endl;
+        else if (n.size() == 1) cout << res(n[0]) << endl;
+        else if (n == "10") cout << "muoi" << endl;
+        else if (n.size() == 2 && n[1] == '0' && n[1] != '1') 
+ 
+        {
+            string tmp = "";
+            tmp += res(n[0]) + " ";
+            tmp += "muoi";
+            cout << tmp << endl;
+            
         }
-    }
-}
-
-string readThreeDigits(int n) {
-    int hundred = n / 100;
-    int remainder = n % 100;
-    string result = readUnit(hundred) + " tram";
-    if (remainder > 0) {
-        if (remainder < 10) {
-            result += " linh " + readUnit(remainder);
-        } else {
-            result += " " + readTwoDigits(remainder);
+        else if (n.size() == 2 && n[1] != 0 && n[0] == '1') 
+ 
+        {
+            string tmp = "";
+            tmp += "muoi ";
+            if (n[1] == '5') tmp += "lam";
+            else tmp += res(n[1]);
+            cout << tmp << endl;
+            
         }
-    }
-    return result;
-}
-
-string readLargeNumber(int n) {
-    if (n == 0) return "khong";
-    if (n < 1000) return readThreeDigits(n);
-
-    string result = "";
-    int billion = n / 1000000000;
-    n %= 1000000000;
-    int million = n / 1000000;
-    n %= 1000000;
-    int thousand = n / 1000;
-    n %= 1000;
-
-    if (billion > 0) {
-        result += readLargeNumber(billion) + " ty";
-        if (million > 0 || thousand > 0 || n > 0) {
-            result += " ";
+        else 
+        {
+            string tmp = "";
+            tmp += res(n[0]);
+            tmp += " muoi ";
+            if (n[1] == '5') tmp += "lam";
+            else tmp += res(n[1]);
+            cout << tmp << endl;
+            
         }
-    }
-
-    if (million > 0) {
-        result += readThreeDigits(million) + " trieu";
-        if (thousand > 0 || n > 0) {
-            result += " ";
-        }
-    }
-
-    if (thousand > 0) {
-        result += readThreeDigits(thousand) + " nghin";
-        if (n > 0) {
-            result += " ";
-        }
-    }
-
-    if (n > 0) {
-        result += readThreeDigits(n);
-    }
-
-    return result;
-}
-
-int main() {
-    ifstream inputFile("data.in");
-    if (inputFile.is_open()) {
-        int numTestCases;
-        inputFile >> numTestCases;
-        inputFile.ignore();
-
-        for (int i = 0; i < numTestCases; ++i) {
-            int n;
-            inputFile >> n;
-            inputFile.ignore();
-            cout << readLargeNumber(n) << endl;
-        }
-        inputFile.close();
+        
     }
     return 0;
 }
