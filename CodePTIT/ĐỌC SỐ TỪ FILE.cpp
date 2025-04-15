@@ -100,8 +100,6 @@ int main() {
             cout << readLargeNumber(n) << endl;
         }
         inputFile.close();
-    } else {
-        cout << "Khong the mo file data.in" << endl;
     }
     return 0;
 }
