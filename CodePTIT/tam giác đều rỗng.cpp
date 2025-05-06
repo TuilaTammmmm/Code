@@ -6,12 +6,10 @@ int main() {
     cin >> N;
 
     for (int i = 0; i < N; i++) {
-        // In khoảng trắng
         for (int j = 0; j < N - i - 1; j++) {
             cout << " ";
         }
 
-        // In các ký tự '*'
         for (int j = 0; j < 2 * i + 1; j++) {
             if (j == 0 || j == 2 * i || (i == N - 1 && j % 2 == 0)) {
                 cout << "*";
@@ -20,7 +18,6 @@ int main() {
             }
         }
 
-        // Xuống dòng
         cout << endl;
     }
 
