@@ -29,7 +29,7 @@ void Init(void)
     cin >> n >> k;
     for (int i = 1; i <= n; i++)
         cin >> a[i];
-    for (int i = 1; i <= k; i++) // tập con đầu tiên là 1, 2, .., k
+    for (int i = 1; i <= k; i++) 
     {
         X[i] = i;
     }
