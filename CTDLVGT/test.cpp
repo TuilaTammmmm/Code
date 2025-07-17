@@ -1,107 +1,62 @@
 #include <iostream>
-#include <iomanip>
-#include <string>
-#include <algorithm>
-#define MAX 100
+#include <queue>
 using namespace std;
 
-char X[MAX];
-char T[MAX];
-int n, m, dem = 0;
-bool OK = true;
+const int MAX = 100;
+int A[MAX][MAX]; // Ma trận kề
+bool visited[MAX];
+int V; // Số đỉnh
 
-void Init() {
-    string S;
-    cin >> S;
-    n = S.length();
+void DFS(int u) {
+    visited[u] = true;
+    cout << u << " ";
 
-    m = 0;
-    bool used[256] = {false};
-    for (int i = 0; i < n; i++) {
-        if (!used[S[i]]) {
-            T[m] = S[i];
-            used[S[i]] = true;
-            m++;
+    for (int v = 1; v <= V; v++) {
+        if (A[u][v] == 1 && !visited[v]) {
+            DFS(v);
         }
-    }
-
-    sort(T, T + m);
-
-    for (int i = 1; i <= n; i++) {
-        X[i] = T[i - 1];
     }
 }
 
-void Result() {
-    for (int i = 1; i <= n; i++) {
-        cout << X[i];
-    }
-    cout << " ";
-}
+void BFS(int start) {
+    queue<int> q;
+    visited[start] = true;
+    q.push(start);
 
-void Next_Permutation() {
-    int j = n - 1;
-    while (j > 0 && X[j] >= X[j + 1]) {
-        j--;
-    }
-    if (j > 0) {
-        int k = n;
-        while (X[j] >= X[k]) {
-            k--;
-        }
-        char t = X[j];
-        X[j] = X[k];
-        X[k] = t;
+    while (!q.empty()) {
+        int u = q.front(); q.pop();
+        cout << u << " ";
 
-        int r = j + 1, s = n;
-        while (r <= s) {
-            t = X[r];
-            X[r] = X[s];
-            X[s] = t;
-            r++;
-            s--;
-        }
-    } else {
-        OK = false;
-    }
-}
-
-void Generate_Permutations(string S) {
-    n = S.length();
-
-    m = 0;
-    bool used[256] = {false};
-    for (int i = 0; i < n; i++) {
-        if (!used[S[i]]) {
-            T[m] = S[i];
-            used[S[i]] = true;
-            m++;
+        for (int v = 1; v <= V; v++) {
+            if (A[u][v] == 1 && !visited[v]) {
+                visited[v] = true;
+                q.push(v);
+            }
         }
     }
-
-    sort(T, T + m);
-
-    for (int i = 1; i <= n; i++) {
-        X[i] = T[i - 1];
-    }
-
-    OK = true;
-    dem = 0;
-    while (OK) {
-        Result();
-        Next_Permutation();
-    }
-    cout << endl;
 }
-
 int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        string S;
-        cin >> S;
-        Generate_Permutations(S);
+    cout << "Nhap so dinh V: ";
+    cin >> V;
+
+    cout << "Nhap ma tran ke " << V << " x " << V << ":\n";
+    for (int i = 1; i <= V; i++) {
+        for (int j = 1; j <= V; j++) {
+            cin >> A[i][j];
+        }
     }
+
+    int start=1;
+
+    cout << "DFS: ";
+    fill(visited, visited + MAX, false);
+    DFS(start);
     cout << endl;
+
+    cout << "BFS: ";
+    fill(visited, visited + MAX, false);
+    BFS(start);
+    cout << endl;
+
     return 0;
 }

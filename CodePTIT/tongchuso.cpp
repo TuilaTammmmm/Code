@@ -1,20 +1,19 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-int sum(int n)
-{
-    int x = 0;
-    while (n > 0) {
-        x += n % 10;
-        n /= 10;
-    }
-    return x;
-}
-
-int main()
-{
-    int n;
+int main() {
+    string n;
     cin >> n;
-    cout << sum(n);
-   return 0;
+    int count = 0;
+    while (n.size() > 1) {
+        long long sum = 0;
+        for (char c : n) {
+            sum += c - '0';
+        }
+        n = to_string(sum);
+        count++;
+    }
+    cout << count << endl;
+    return 0;
 }
