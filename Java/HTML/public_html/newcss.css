@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    flex: 1;
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+.hinh-anh-ben-trai {
+    width: 70%; 
+    background-color: #f0f0f0; 
+}
+.form-ben-phai {
+    width: 30%
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fff;
+}
+    width: 100%;
+}
+.hinh-anh-ben-trai img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.form-ben-phai input {
+    width: 100%; /* Dài hết cỡ bề ngang của form */
+    padding: 12px; /* Khoảng cách từ chữ đến viền ô (cho thoáng) */
+    margin-bottom: 15px; /* Khoảng cách giữa các ô input */
+    border: 1px solid #ddd; /* Viền mỏng màu xám nhạt */
+    border-radius: 4px; /* Bo tròn góc nhẹ cho mềm mại */
+    background-color: #f9f9f9; /* Màu nền xám cực nhạt */
+    outline: none; /* Bỏ viền xanh mặc định khi bấm vào */
+}
+
+/* Hiệu ứng khi bấm chuột vào ô input */
+.form-ben-phai input:focus {
+    border-color: #b71c1c; /* Đổi viền thành màu đỏ PTIT */
+    background-color: #fff; /* Nền chuyển sang trắng tinh */
+}
+/* Nút Đăng nhập */
+.login {
+    width: 100%;
+    padding: 12px;
+    background-color: #b71c1c; /* Đỏ mận (Màu thương hiệu PTIT) */
+    color: white; /* Chữ trắng */
+    border: none; /* Bỏ viền đen xấu xí */
+    border-radius: 4px; /* Bo góc */
+    font-weight: bold; /* Chữ đậm */
+    cursor: pointer; /* Đổi con trỏ chuột thành bàn tay */
+    margin-top: 20px; /* Cách xa link 'Quên mật khẩu' một chút */
+    transition: 0.3s; /* Tạo hiệu ứng chuyển màu mượt mà */
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+.login:hover {
+    background-color: #8e1616; /* Đổi sang màu đỏ đậm hơn */
+}
+
+/* Link Quên mật khẩu */
+.form-ben-phai a {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #666; /* Màu xám */
+    font-size: 0.9rem; /* Chữ nhỏ hơn bình thường một chút */
+    text-align: right; /* Đẩy sang phải (Lưu ý: cần đặt thẻ a trong 1 thẻ div block hoặc set display:block để lệnh này chạy) */
+    display: block; /* Biến thẻ a thành khối để căn lề phải được */
+}
+.form-ben-phai a:hover {
+    color: #b71c1c; /* Di chuột vào thì đổi màu đỏ */
+    text-decoration: underline; /* Hiện gạch chân */
+}
+.chan-trang {
+    background-color: #b71c1c; /* Nền đỏ */
+    color: white; /* Chữ trắng */
+    text-align: center; /* Căn giữa chữ */
+    padding: 15px; /* Độ dày của thanh chân trang */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase; /* Tự động viết hoa toàn bộ chữ */
+}

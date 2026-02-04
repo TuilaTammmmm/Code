@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sổ Tay Frontend</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ==========================================================================
+           PHẦN 1: RESET & CÀI ĐẶT CHUNG (BẮT BUỘC PHẢI CÓ)
+           Lý do: Trình duyệt (Chrome, Edge) luôn tự thêm margin/padding lung tung.
+           Ta cần xóa sạch để dễ kiểm soát.
+           ========================================================================== */
+        * {
+            margin: 0;      /* Xóa khoảng cách bên ngoài */
+            padding: 0;     /* Xóa khoảng cách đệm bên trong */
+            
+            /* [QUAN TRỌNG] 
+               Nếu không có dòng này: Hộp rộng 100px + padding 20px = Nó phình ra thành 140px -> Vỡ giao diện.
+               Có dòng này: Hộp rộng 100px + padding 20px = Vẫn là 100px (nội dung bên trong tự co lại).
+            */
+            box-sizing: border-box; 
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif; /* Font chữ hiện đại, không chân */
+            background-color: #f0f2f5; /* Màu xám xanh nhạt (giống Facebook) đỡ mỏi mắt */
+            color: #333; /* Màu chữ đen xám (dễ đọc hơn đen tuyền #000) */
+            line-height: 1.6; /* Khoảng cách giữa các dòng chữ (để các dòng không dính chùm) */
+            padding: 20px;
+        }
+
+        /* Class tiện ích dùng chung (Dùng đi dùng lại nhiều nơi) */
+        .container {
+            max-width: 1000px; /* Giới hạn chiều rộng, không để web bè ra hết màn hình to */
+            margin: 0 auto;    /* Thần chú căn giữa khối block: Trên dưới=0, Trái phải=Tự động */
+        }
+
+        /* ==========================================================================
+           PHẦN 2: FLEXBOX (CÔNG CỤ DÀN TRANG MẠNH NHẤT)
+           Dùng khi: Muốn sắp xếp menu, icon, danh sách nằm ngang hoặc dọc.
+           ========================================================================== */
+        .flex-box {
+            display: flex; /* [Kích hoạt] Biến thẻ này thành hộp dẻo. Các con bên trong sẽ nằm ngang hàng nhau. */
+            
+            /* TRỤC NGANG (Main Axis): Điều khiển vị trí trái/phải/giữa */
+            justify-content: space-between; 
+            /* center: Dồn hết vào giữa.
+               flex-start: Dồn sang trái (mặc định).
+               flex-end: Dồn sang phải.
+               space-between: Đẩy các phần tử ra xa nhau nhất có thể (thường dùng cho Menu: Logo bên trái, Login bên phải).
+            */
+
+            /* TRỤC DỌC (Cross Axis): Điều khiển vị trí trên/dưới */
+            align-items: center; 
+            /* center: Căn giữa theo chiều cao (Rất hay dùng).
+               stretch: Kéo dài phần tử con ra bằng chiều cao bố (mặc định).
+            */
+
+            gap: 20px; /* Tạo khoảng cách đều nhau giữa các phần tử con (không cần margin thủ công) */
+            
+            background: white;
+            padding: 20px;
+            border-radius: 10px; /* Bo tròn góc hộp chứa */
+            margin-bottom: 30px; /* Cách phần bên dưới 30px */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Đổ bóng nhẹ cho nổi lên */
+        }
+
+        .item {
+            background: #007bff; /* Màu xanh dương */
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* ==========================================================================
+           PHẦN 3: GRID (LƯỚI)
+           Dùng khi: Chia layout phức tạp như danh sách sản phẩm, thư viện ảnh (2 chiều).
+           ========================================================================== */
+        .grid-box {
+            display: grid; /* [Kích hoạt] Chế độ lưới */
+            
+            /* Chia cột: Dòng này nghĩa là chia 3 cột đều nhau */
+            grid-template-columns: repeat(3, 1fr); 
+            /* repeat(3, 1fr) = Tương đương: 1fr 1fr 1fr 
+               1fr (fraction): Là 1 phần. Nếu màn hình co giãn, cột cũng tự co giãn theo tỉ lệ.
+               Nếu muốn cột bên trái to gấp đôi: grid-template-columns: 2fr 1fr 1fr;
+            */
+
+            gap: 20px; /* Khoảng cách giữa các ô lưới */
+            margin-bottom: 30px;
+        }
+
+        .grid-item {
+            background: #28a745; /* Màu xanh lá */
+            color: white;
+            padding: 20px;
+            text-align: center; /* Căn giữa chữ bên trong ô */
+            border-radius: 8px;
+        }
+
+        /* ==========================================================================
+           PHẦN 4: TRANG TRÍ & HIỆU ỨNG (UI/UX)
+           Làm cho web "sướng" mắt và "sướng" tay khi bấm.
+           ========================================================================== */
+        
+        /* 1. Nút bấm (Button) */
+        .btn {
+            display: inline-block; /* Để chỉnh được width/height/padding mà vẫn nằm trên dòng */
+            padding: 12px 24px;
+            background-color: #6c5ce7; /* Màu tím Trendy */
+            color: white;
+            text-decoration: none; /* Bỏ gạch chân mặc định của thẻ a */
+            border: none;
+            border-radius: 50px; /* Bo tròn cực đại thành hình viên thuốc */
+            cursor: pointer; /* Biến con trỏ chuột thành hình bàn tay */
+            font-size: 16px;
+            font-weight: bold;
+            
+            /* Hiệu ứng chuyển động (Animation) */
+            transition: all 0.3s ease; 
+            /* Khi hover, mọi thuộc tính sẽ thay đổi từ từ trong 0.3 giây (không bị giật cục) */
+        }
+
+        /* Trạng thái Hover (Khi di chuột vào) */
+        .btn:hover {
+            background-color: #5541c8; /* Đổi màu nền đậm hơn */
+            transform: translateY(-5px); /* Nhấc nút lên cao 5px -> Cảm giác nút nổi lên */
+            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4); /* Bóng đổ đậm hơn xuống dưới */
+        }
+
+        /* 2. Thẻ Card (Giống Shopee/Facebook) */
+        .card {
+            background: white;
+            width: 300px;
+            border-radius: 12px;
+            overflow: hidden; /* [Mẹo] Cắt bỏ phần ảnh thừa ra khỏi góc bo tròn */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s; /* Chuẩn bị cho hiệu ứng zoom */
+            margin: 0 auto;
+        }
+        
+        .card:hover {
+            transform: scale(1.05); /* Phóng to toàn bộ thẻ lên 5% khi di chuột */
+        }
+
+        .card img {
+            width: 100%; /* Ép ảnh luôn rộng bằng thẻ chứa nó */
+            height: 200px; /* Chiều cao cố định */
+            object-fit: cover; 
+            /* [RẤT QUAN TRỌNG KHI LÀM ẢNH]
+               cover: Cắt bớt ảnh để lấp đầy khung mà không làm méo/dẹt ảnh.
+               contain: Giữ nguyên ảnh nhưng có thể bị khoảng trắng.
+            */
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        /* ==========================================================================
+           PHẦN 5: POSITION (ĐỊNH VỊ)
+           Dùng để đặt phần tử đè lên nhau hoặc dính chặt vào màn hình.
+           ========================================================================== */
+        
+        /* Box cha (Làm mốc tọa độ) */
+        .relative-box {
+            position: relative; /* Khai báo: "Tao là mốc tọa độ cho con tao" */
+            height: 200px;
+            background-color: #dfe6e9;
+            border: 2px dashed #b2bec3;
+            margin-top: 30px;
+        }
+
+        /* Box con (Bay nhảy tự do) */
+        .absolute-box {
+            position: absolute; /* Khai báo: "Tao sẽ bay theo thằng cha gần nhất có position" */
+            
+            top: 20px;   /* Cách đỉnh đầu cha 20px */
+            right: 20px; /* Cách bên phải cha 20px */
+            
+            background: #d63031; /* Màu đỏ */
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            
+            z-index: 10; /* Lớp ưu tiên: Số càng to càng nằm đè lên trên các thằng khác */
+        }
+
+        /* Nút Chat cố định (Giống Messenger) */
+        .fixed-btn {
+            position: fixed; /* Dính chặt vào màn hình trình duyệt (kể cả khi cuộn trang) */
+            bottom: 20px; /* Cách đáy màn hình 20px */
+            right: 20px;  /* Cách phải màn hình 20px */
+            
+            width: 60px;
+            height: 60px;
+            background: #0984e3;
+            color: white;
+            border-radius: 50%; /* Tròn xoe */
+            display: flex;       /* Để căn giữa chữ bên trong nút tròn */
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 30px;">Bộ Code Mẫu HTML/CSS</h1>
+
+        <h3>1. Flexbox (Dàn menu 2 bên)</h3>
+        <p>Thường dùng làm thanh điều hướng (Header).</p>
+        <div class="flex-box">
+            <div class="item" style="background: #333;">Logo</div>
+            <div class="item">Menu 1</div>
+            <div class="item">Menu 2</div>
+            <div class="item" style="background: #e17055;">Đăng nhập</div>
+        </div>
+
+        <h3>2. Grid (Chia cột sản phẩm)</h3>
+        <p>Thử co nhỏ trình duyệt lại để xem nó tự co giãn (vì dùng 1fr).</p>
+        <div class="grid-box">
+            <div class="grid-item">Sản phẩm 1</div>
+            <div class="grid-item">Sản phẩm 2</div>
+            <div class="grid-item">Sản phẩm 3</div>
+            <div class="grid-item">Sản phẩm 4</div>
+            <div class="grid-item">Sản phẩm 5</div>
+            <div class="grid-item">Sản phẩm 6</div>
+        </div>
+
+        <h3>3. Card & Hover Effect</h3>
+        <p>Di chuột vào thẻ bên dưới để xem hiệu ứng phóng to và đổ bóng.</p>
+        <div style="display: flex; justify-content: center;"> <div class="card">
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Code">
+                <div class="card-content">
+                    <h4>Lập trình Frontend</h4>
+                    <p style="font-size: 14px; color: #636e72; margin-top: 5px;">Học HTML, CSS, JS để tạo ra giao diện đẹp mắt.</p>
+                    <br>
+                    <a href="#" class="btn">Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 30px;">4. Position Absolute (Tuyệt đối)</h3>
+        <p>Cái hộp đỏ đang bay theo hộp xám chứ không theo dòng chảy văn bản bình thường.</p>
+        <div class="relative-box">
+            <div class="absolute-box">HOT SALE!</div>
+            <p style="padding: 20px;">Đây là nội dung bình thường trong hộp cha...</p>
+        </div>
+
+    </div>
+
+    <div class="fixed-btn">Chat</div>
+
+</body>
+</html>

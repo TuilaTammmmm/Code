@@ -1,0 +1,22 @@
+<HTML>
+<TITLE>Tinh tuoi</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<BODY>
+<script language="JavaScript">
+var D = new Date();
+var NamSinh, NamHienTai;
+NamHienTai = D.getFullYear();
+do {
+NamSinh = prompt("Bạn sinh năm bao nhiêu : ","");
+} while (parseInt(NamSinh)>NamHienTai);
+alert("Tuổi của bạn bây giờ là : " + (NamHienTai-NamSinh));
+
+//tương tự bài 8 nhưng có thêm parseInt để đổi năm sinh về số
+// rồi so sánh năm sinh không lớn hơn năm hiện tại
+//nếu lớn hơn thì nhập lại
+</script>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,9 @@
+CREATE  INDEX IX_LuotKham_MaBenhNhan
+ON TacVu.LuotKham(MaBenhNhan);
+GO
+SET STATISTICS IO ON;
+SET STATISTICS TIME ON;
+
+SELECT MaLuotKham,TrangThai
+FROM TacVu.LuotKham
+WHERE MaBenhNhan = N'BN03265';

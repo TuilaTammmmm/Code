@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"> <title>Bài 1 C2</title>
+    <style>
+        .lamlai{
+            background-color: rgb(2, 160, 2);
+            color: white;
+        }
+        .login{
+            background-color: rgb(250, 48, 48);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Tên đăng nhập:</p>
+    <input type="text" class="ten" >
+    <p>Mật khẩu</p>
+    <input type="password" class="pass"> <br>
+    <button onclick="lamlai()" class="lamlai">Làm lại</button>
+    <button onclick="dangnhap()" class="login">Đăng nhập</button>
+    <p id="thongbao" style="color: red; font-weight: bold;"></p>
+    <script>
+        const tenDung = 'anhttv';
+        const matKhauDung = '123';
+        
+        function dangnhap(){
+            let theInputTen = document.querySelector('.ten').value;
+            let theInputPass = document.querySelector('.pass').value;
+            let noiHienThi = document.getElementById("thongbao");
+            if (theInputTen == tenDung && theInputPass == matKhauDung) {
+                noiHienThi.innerHTML = "Hello anhttv!";
+                noiHienThi.style.color = "blue";
+            } else {
+                noiHienThi.innerHTML = "Nhập sai";
+            }
+        }
+        function lamlai(){
+            document.querySelector('.ten').value = "";
+            document.querySelector('.pass').value = "";
+            document.getElementById("thongbao").innerHTML = "";
+        }
+    </script>
+
+</body>
+</html>

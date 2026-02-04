@@ -1,0 +1,12 @@
+<HTML>
+<TITLE>Tính tuổi</TITLE>
+<BODY>
+<script language="JavaScript">
+var D = new Date();//lấy ngày tháng năm hiện tại
+var NamSinh, NamHienTai;//khai báo năm sinh và năm hiện tại
+NamHienTai = D.getFullYear();// dùng getFullYear để lấy đầy đủ năm vd:2026
+NamSinh = prompt("Bạn sinh năm bao nhiêu ? : ",""); //dùng prompt để thông báo và nhập vào năm sinh
+alert("Tuổi của bạn bây giờ là : " + (NamHienTai-NamSinh)); // dùng alert để ra cảnh báo (thông báo) tuổi
+</script>
+</BODY>
+</HTML>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="Google.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        body{
+            background-color: rgb(54, 54, 54);
+        }
+        .heading{
+            display: flex;
+            justify-content: end;
+        }
+        .heading a{
+            margin-right: 10px;
+            margin-top: 5px;
+            color: white;
+            text-decoration: none;
+
+        }
+        .search{
+            display: flex;
+            background-color: white;
+            width: 640px;
+            height: 46px; 
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            margin: 200px auto;
+        }
+        .search input{
+            flex-grow: 1;
+            background-color: transparent;
+            border: none;
+        }
+        .menu{
+            border-radius: 10px;
+            background-color: transparent;
+            border: none;
+            color: white;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <a href="#">Gmail</a>
+        <a href="#">Hình Ảnh</a>
+        <button class="menu"><span class="material-symbols-outlined">apps</span></button>
+    </div>
+    <div class="search">
+        <div>
+            <span class="material-symbols-outlined">search</span>
+        </div>
+        <input type="text" placeholder="Tìm trên Google hoặc nhập một URL">
+        <div>
+            <span class="material-symbols-outlined">mic</span>
+            <span class="material-symbols-outlined">photo_camera</span>
+        </div>
+    </div>
+</body>
+</html>

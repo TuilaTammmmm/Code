@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thay đổi giá trị của thuộc tính</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h2>Hãy nhập hai số và click vào nút Tính tổng</h2>
+    
+    <input type="text" id="SoHang1"> +
+    <input type="text" id="SoHang2"> =
+    <input type="text" id="KetQua" readonly>
+    
+    <input type="button" value="Tính tổng" onclick="tinhTong()">
+
+    <script>
+        function tinhTong() {
+            const num1 = document.getElementById('SoHang1').value;
+            const num2 = document.getElementById('SoHang2').value;
+            const sum = parseFloat(num1) + parseFloat(num2);
+            document.getElementById('KetQua').value =sum;
+        }
+    </script>
+</body>
+</html>

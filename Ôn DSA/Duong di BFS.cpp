@@ -6,20 +6,20 @@ using namespace std;
 
 vector<int> adj[1001];
 bool visited[1001];
-int parent[1001];
+int Duondi[1001];
 
 void bfs(int s, int t) {
     queue<int> q;
     q.push(s);
     visited[s] = true;
-    parent[s] = -1;
+    Duondi[s] = -1;
 
     while (!q.empty()) {
         int u = q.front(); q.pop();
         for (int v : adj[u]) {
             if (!visited[v]) {
                 visited[v] = true;
-                parent[v] = u;
+                Duondi[v] = u;
                 q.push(v);
             }
         }
@@ -31,7 +31,7 @@ void bfs(int s, int t) {
     }
 
     vector<int> path;
-    for (int v = t; v != -1; v = parent[v])
+    for (int v = t; v != -1; v = Duondi[v])
         path.push_back(v);
     reverse(path.begin(), path.end());
 

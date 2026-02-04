@@ -1,0 +1,24 @@
+<HTML>
+<TITLE>Sắp xếp mảng</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<BODY>
+<script language="JavaScript">
+var SoLuong, x;
+var DS = new Array(100); //Khai báo mảng DS, có thể lưu tối đa là 100 phẩn tử
+SoLuong = prompt("Bạn cần nhập bao nhiêu người: ", 5);
+for (i=0; i < SoLuong; i++)
+{
+    DS[i] = prompt("Nhập vào họ tên: ","");
+}
+//Gọi hàm sort của đối tượng mảng DS để sắp xếp
+DS.sort();
+//Hiển thị kết quả sau khi sắp (sort)
+document.write("<h1>Danh sách đã sắp xếp là </h1>");
+for (x in DS) /* Nên sử dụng cấu trúc for … in này để duyệt mảng */
+{
+document.write( DS[x] );
+document.write("<BR>"); // Xuống dòng
+}
+</script>
+</BODY>
+</HTML>

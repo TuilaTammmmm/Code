@@ -1,0 +1,10 @@
+S001 Lap trinh Java NXB KHKT 150000.0 50 Tieng Viet
+S002 SQL Nang cao NXB Giao Duc 125000.0 30 Tieng Viet
+S003 Clean Code Addison-Wesley 450000.5 20 Ngoai Ngu
+S004 Mang may tinh NXB Bach Khoa 220000.0 45 Tieng Viet
+S005 The Pragmatic Programmer O'Reilly 510000.0 15 Ngoai Ngu
+S006 Cau truc du lieu NXB Giao Duc 180000.75 60 Tieng Viet
+S007 AI Hien dai NXB KHKT 300000.0 25 Tieng Viet
+S008 Design Patterns GoF 550000.0 10 Ngoai Ngu
+S009 Dac nhan tam NXB Tre 95000.0 100 Tieng Viet
+S010 English Grammar in Use Cambridge 280000.0 70 Ngoai Ngu
