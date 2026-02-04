@@ -1,1 +1,0 @@
-{"name":"Local: Kiem tra day ngoac dung","url":"d:\\Tam\\Code\\Ôn DSA\\Kiem tra day ngoac dung.cpp","tests":[{"id":1752641244072,"input":"2\n[()]{}{[()()]()}\n[(])","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Tam\\Code\\Ôn DSA\\Kiem tra day ngoac dung.cpp","group":"local","local":true}
