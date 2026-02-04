@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+.nevbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+    background-color: black;
+    width: 140px;
+    border-radius: 50px;
+}
+.content{
+    display: none;
+}
+.content.active {
+    display: block;
+}
